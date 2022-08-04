@@ -9,25 +9,47 @@
 
 
     <div>
-      <div class="grid">
-        <div class="grid-item" v-on:click="about">
-          <el-card shadow="always" :body-style="{ padding: '0px' }">
+
+      <div class="contents" v-on:click="about">
+        <el-card shadow="always" :body-style="{ padding: '0px' }">
+        <div class="section">
+          <div class="photo">
             <img src="@/assets/github.jpg" />
-            <p>Github</p>
-          </el-card>
+          </div>
+          <div class="explanation">
+            <h4>About</h4>
+            <p>Welcome to my website. Hello, everyone. My name is Yuki Matsuura.</p>
+          </div>
         </div>
-        <div class="grid-item" v-on:click="research">
-          <el-card shadow="always" :body-style="{ padding: '0px' }">
-            <img src="@/assets/foretuneapp.jpg" />
-            <p>Fortune App</p>
-          </el-card>
+        </el-card>
+      </div>
+
+      <div class="contents" v-on:click="research">
+        <el-card shadow="always" :body-style="{ padding: '0px' }">
+        <div class="section">
+          <div class="explanation">
+            <h4>Research</h4>
+            <p>I researched about wearable / uniquitus computing in Kobe Univ.</p>
+          </div>
+          <div class="photo">
+            <img src="@/assets/github.jpg" />
+          </div>
         </div>
-        <div class="grid-item" v-on:click="portfolio">
-          <el-card shadow="always" :body-style="{ padding: '0px' }">
-            <img src="@/assets/blog.jpg" />
-            <p>Blog</p>
-          </el-card>
+        </el-card>
+      </div>
+
+      <div class="contents" v-on:click="portfolio">
+        <el-card shadow="always" :body-style="{ padding: '0px' }">
+        <div class="section">
+          <div class="photo">
+            <img src="@/assets/github.jpg" />
+          </div>
+          <div class="explanation">
+            <h4>Portfolio</h4>
+            <p>Introduce my hobby.</p>
+          </div>
         </div>
+        </el-card>
       </div>
 
     </div>
@@ -57,6 +79,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+* {
+  font-family: 'Alegreya Sans SC', serif;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
 .container {
   padding-left: 20%;
   padding-right: 20%;
@@ -90,6 +125,29 @@ img {
 
 .grid-item {
     text-align: center;
+}
+
+.contents {
+  width: 50vw;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.section {
+  display: flex;
+  text-align: left;
+}
+
+.photo {
+  width: 25vw;
+}
+
+.explanation {
+  width: 25vw;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 </style>

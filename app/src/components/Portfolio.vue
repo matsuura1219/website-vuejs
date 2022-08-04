@@ -7,6 +7,9 @@
     </div>
 
     <div>
+      <div class="title">
+        <h3>〜 Portfolio 〜</h3>
+      </div>
       <div class="grid">
         <div class="grid-item" v-on:click="github">
           <el-card shadow="always" :body-style="{ padding: '0px' }">
@@ -54,13 +57,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+* {
+  font-family: 'Alegreya Sans SC', serif;
+}
+
 h3 {
   font-size: 24px;
 }
 
 .container {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  text-align: left;
 }
 
 .about {

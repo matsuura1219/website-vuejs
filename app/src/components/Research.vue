@@ -101,8 +101,17 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+* {
+  font-family: 'Alegreya Sans SC', serif;
+}
+
 h3 {
   font-size: 24px;
+}
+
+.header {
+  margin-bottom: 50px;
 }
 
 .container {

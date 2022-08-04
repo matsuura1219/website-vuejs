@@ -77,8 +77,17 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+* {
+  font-family: 'Alegreya Sans SC', serif;
+}
+
 h3 {
   font-size: 24px;
+}
+
+.header {
+  margin-bottom: 40px;
 }
 
 .container {
@@ -88,6 +97,7 @@ h3 {
 
 .about {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .about-detail {
@@ -124,6 +134,7 @@ h3 {
   text-align: left;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .certification {

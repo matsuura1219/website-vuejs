@@ -9,12 +9,11 @@
 
 
     <div>
-
       <div class="contents" v-on:click="about">
         <el-card shadow="always" :body-style="{ padding: '0px' }">
         <div class="section">
           <div class="photo">
-            <img src="@/assets/github.jpg" />
+            <img src="@/assets/about.jpg" />
           </div>
           <div class="explanation">
             <h4>About</h4>
@@ -32,7 +31,7 @@
             <p>I researched about wearable / uniquitus computing in Kobe Univ.</p>
           </div>
           <div class="photo">
-            <img src="@/assets/github.jpg" />
+            <img src="@/assets/research.jpg" />
           </div>
         </div>
         </el-card>
@@ -42,7 +41,7 @@
         <el-card shadow="always" :body-style="{ padding: '0px' }">
         <div class="section">
           <div class="photo">
-            <img src="@/assets/github.jpg" />
+            <img src="@/assets/portfolio.jpg" />
           </div>
           <div class="explanation">
             <h4>Portfolio</h4>
@@ -88,6 +87,11 @@ h4 {
   font-size: 24px;
 }
 
+img {
+  height: 100%;
+  width: auto;
+}
+
 .header {
   margin-bottom: 40px;
 }
@@ -110,11 +114,15 @@ h4 {
   width: 50%;
 }
 
-.explanation {}
+.explanation {
+  width: 50%;
+}
 
 img {
   width: 100%;
+  height: 200px;
   display: block;
+  object-fit: cover; /* この一行を追加するだけ！ */
 }
 
 .grid {
@@ -129,7 +137,7 @@ img {
 
 .contents {
   width: 50vw;
-  height: fit-content;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;

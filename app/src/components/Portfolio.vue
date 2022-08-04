@@ -14,19 +14,35 @@
         <div class="grid-item" v-on:click="github">
           <el-card shadow="always" :body-style="{ padding: '0px' }">
             <img src="@/assets/github.jpg" />
-            <p>Github</p>
+            <p>Github<br>〜 matsuura1219 〜</p>
           </el-card>
         </div>
         <div class="grid-item" v-on:click="fortuneapp">
           <el-card shadow="always" :body-style="{ padding: '0px' }">
             <img src="@/assets/foretuneapp.jpg" />
-            <p>Fortune App</p>
+            <p>Fortune App<br>〜 占いアプリ 〜</p>
           </el-card>
         </div>
         <div class="grid-item" v-on:click="blog">
           <el-card shadow="always" :body-style="{ padding: '0px' }">
             <img src="@/assets/blog.jpg" />
-            <p>Blog</p>
+            <p>Blog<br>〜 はてなブログ 〜</p>
+          </el-card>
+        </div>
+        <div class="grid-item">
+          <el-card shadow="none" :body-style="{ padding: '0px' }">
+            <div class="is-closed">
+              <img src="@/assets/github.jpg" />
+            </div>
+            <p>FaceMusic（公開停止中）<br>〜 楽曲提案アプリ 〜</p>
+          </el-card>
+        </div>
+        <div class="grid-item">
+          <el-card shadow="none" :body-style="{ padding: '0px' }">
+            <div class="is-closed">
+              <img src="@/assets/github.jpg" />
+            </div>
+            <p>FaceDiary（開発中）<br>〜 日記アプリ 〜</p>
           </el-card>
         </div>
       </div>
@@ -95,6 +111,14 @@ h3 {
   line-height: 30px;
 }
 
+.is-closed {
+  background-color: black;
+}
+
+.is-closed img {
+  opacity: 0.6;
+}
+
 .about-ja {
   width: 50vw;
   margin-left: auto;
@@ -119,13 +143,13 @@ img {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .grid-item {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
 </style>

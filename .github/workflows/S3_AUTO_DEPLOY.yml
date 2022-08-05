@@ -15,7 +15,8 @@ jobs:
         run: cd app && npm install
 
       - name: Build
-        run: npm run build  # React ビルド
+        run: npm run build  # vuejs ビルド
+        working-directory: ./app
 
       - name: Deploy  # S3にデプロイ 
         env:
